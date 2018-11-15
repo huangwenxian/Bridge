@@ -11,6 +11,7 @@
 		6B545F6C2177115E001DF05F /* Gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B545F6B2177115E001DF05F /* Gigi.framework */; };
 		6B545F6D21771165001DF05F /* Gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B545F6B2177115E001DF05F /* Gigi.framework */; };
 		6B545F6E21771165001DF05F /* Gigi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B545F6B2177115E001DF05F /* Gigi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6038F302197094D00F4BB7C /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6038F2F2197094D00F4BB7C /* Toast+UIView.m */; };
 		B67468792068CC54007F4A3A /* netWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = B67468782068CC54007F4A3A /* netWorking.m */; };
 		B67468882068CCB2007F4A3A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B674687F2068CCB2007F4A3A /* AFURLResponseSerialization.m */; };
 		B67468892068CCB2007F4A3A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B67468802068CCB2007F4A3A /* AFHTTPSessionManager.m */; };
@@ -19,12 +20,10 @@
 		B674688C2068CCB2007F4A3A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B67468852068CCB2007F4A3A /* AFNetworkReachabilityManager.m */; };
 		B674688D2068CCB2007F4A3A /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B67468862068CCB2007F4A3A /* AFSecurityPolicy.m */; };
 		B683E45E2062299A005D4DBC /* Scan.m in Sources */ = {isa = PBXBuildFile; fileRef = B683E45D2062299A005D4DBC /* Scan.m */; };
-		B683E46220623038005D4DBC /* scanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B683E46020623037005D4DBC /* scanViewController.m */; };
 		B683E466206232E8005D4DBC /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B683E465206232E8005D4DBC /* BaseObject.m */; };
 		B683E46920623364005D4DBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B683E4682062335F005D4DBC /* Foundation.framework */; };
 		B683E46A2062336A005D4DBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B683E46720623359005D4DBC /* UIKit.framework */; };
 		B683E46E20623C88005D4DBC /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = B683E46D20623C88005D4DBC /* Photo.m */; };
-		B683E47120623CCD005D4DBC /* UIViewController+ImagePickerAndCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B683E47020623CCD005D4DBC /* UIViewController+ImagePickerAndCamera.m */; };
 		B683E47420623E62005D4DBC /* UIImage+UIImageExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B683E47220623E61005D4DBC /* UIImage+UIImageExt.m */; };
 		B683E47B2062429F005D4DBC /* jpush-ios-3.0.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B683E4762062429F005D4DBC /* jpush-ios-3.0.8.a */; };
 		B683E47C2062429F005D4DBC /* jcore-ios-1.1.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B683E4792062429F005D4DBC /* jcore-ios-1.1.8.a */; };
@@ -47,6 +46,11 @@
 		B6B5D04B2068F72F00F0DF1F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B5D04A2068F72F00F0DF1F /* CoreMotion.framework */; };
 		B6B5D11D2068FC8C00F0DF1F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B5D1092068FC8C00F0DF1F /* libcrypto.a */; };
 		B6B5D11E2068FC8C00F0DF1F /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B5D10A2068FC8C00F0DF1F /* libssl.a */; };
+		B6B5ECBE2199C24600342349 /* WSLScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5ECB72199C24500342349 /* WSLScanView.m */; };
+		B6B5ECBF2199C24600342349 /* WSLNativeScanTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5ECB82199C24500342349 /* WSLNativeScanTool.m */; };
+		B6B5ECC02199C24600342349 /* WSLCreateQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5ECB92199C24500342349 /* WSLCreateQRCodeController.m */; };
+		B6B5ECC12199C24600342349 /* scanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5ECBD2199C24600342349 /* scanViewController.m */; };
+		B6B5ECC42199C25900342349 /* UIViewController+ImagePickerAndCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5ECC32199C25800342349 /* UIViewController+ImagePickerAndCamera.m */; };
 		B6CCE1A0205CC3DF00AD1E8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CCE19F205CC3DF00AD1E8D /* AppDelegate.m */; };
 		B6CCE1A3205CC3DF00AD1E8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CCE1A2205CC3DF00AD1E8D /* ViewController.m */; };
 		B6CCE1A8205CC3DF00AD1E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6CCE1A7205CC3DF00AD1E8D /* Assets.xcassets */; };
@@ -83,6 +87,8 @@
 		6B38D332212BBB7200BD1A81 /* AlipayClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlipayClass.h; sourceTree = "<group>"; };
 		6B38D333212BBB7200BD1A81 /* AlipayClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlipayClass.m; sourceTree = "<group>"; };
 		6B545F6B2177115E001DF05F /* Gigi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gigi.framework; sourceTree = "<group>"; };
+		B6038F2E2197094D00F4BB7C /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		B6038F2F2197094D00F4BB7C /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
 		B67468772068CC53007F4A3A /* netWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netWorking.h; sourceTree = "<group>"; };
 		B67468782068CC54007F4A3A /* netWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netWorking.m; sourceTree = "<group>"; };
 		B674687B2068CCB2007F4A3A /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
@@ -101,8 +107,6 @@
 		B683E45A20620BC7005D4DBC /* BridgeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeDelegate.h; sourceTree = "<group>"; };
 		B683E45C2062299A005D4DBC /* Scan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scan.h; sourceTree = "<group>"; };
 		B683E45D2062299A005D4DBC /* Scan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scan.m; sourceTree = "<group>"; };
-		B683E46020623037005D4DBC /* scanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scanViewController.m; sourceTree = "<group>"; };
-		B683E46120623037005D4DBC /* scanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanViewController.h; sourceTree = "<group>"; };
 		B683E4632062306B005D4DBC /* DadaConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DadaConst.h; sourceTree = "<group>"; };
 		B683E464206232E8005D4DBC /* BaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
 		B683E465206232E8005D4DBC /* BaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseObject.m; sourceTree = "<group>"; };
@@ -110,8 +114,6 @@
 		B683E4682062335F005D4DBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B683E46C20623C88005D4DBC /* Photo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		B683E46D20623C88005D4DBC /* Photo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
-		B683E46F20623CCD005D4DBC /* UIViewController+ImagePickerAndCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImagePickerAndCamera.h"; sourceTree = "<group>"; };
-		B683E47020623CCD005D4DBC /* UIViewController+ImagePickerAndCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImagePickerAndCamera.m"; sourceTree = "<group>"; };
 		B683E47220623E61005D4DBC /* UIImage+UIImageExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIImageExt.m"; sourceTree = "<group>"; };
 		B683E47320623E62005D4DBC /* UIImage+UIImageExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImageExt.h"; sourceTree = "<group>"; };
 		B683E4762062429F005D4DBC /* jpush-ios-3.0.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.0.8.a"; sourceTree = "<group>"; };
@@ -224,6 +226,16 @@
 		B6B5D1082068FC8C00F0DF1F /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
 		B6B5D1092068FC8C00F0DF1F /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 		B6B5D10A2068FC8C00F0DF1F /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		B6B5ECB62199C24500342349 /* WSLCreateQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLCreateQRCodeController.h; sourceTree = "<group>"; };
+		B6B5ECB72199C24500342349 /* WSLScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLScanView.m; sourceTree = "<group>"; };
+		B6B5ECB82199C24500342349 /* WSLNativeScanTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLNativeScanTool.m; sourceTree = "<group>"; };
+		B6B5ECB92199C24500342349 /* WSLCreateQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLCreateQRCodeController.m; sourceTree = "<group>"; };
+		B6B5ECBA2199C24500342349 /* scanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanViewController.h; sourceTree = "<group>"; };
+		B6B5ECBB2199C24500342349 /* WSLNativeScanTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLNativeScanTool.h; sourceTree = "<group>"; };
+		B6B5ECBC2199C24600342349 /* WSLScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLScanView.h; sourceTree = "<group>"; };
+		B6B5ECBD2199C24600342349 /* scanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scanViewController.m; sourceTree = "<group>"; };
+		B6B5ECC22199C25800342349 /* UIViewController+ImagePickerAndCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImagePickerAndCamera.h"; sourceTree = "<group>"; };
+		B6B5ECC32199C25800342349 /* UIViewController+ImagePickerAndCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImagePickerAndCamera.m"; sourceTree = "<group>"; };
 		B6CCE19B205CC3DF00AD1E8D /* ZPBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CCE19E205CC3DF00AD1E8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6CCE19F205CC3DF00AD1E8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -335,8 +347,14 @@
 			children = (
 				B683E45C2062299A005D4DBC /* Scan.h */,
 				B683E45D2062299A005D4DBC /* Scan.m */,
-				B683E46120623037005D4DBC /* scanViewController.h */,
-				B683E46020623037005D4DBC /* scanViewController.m */,
+				B6B5ECBA2199C24500342349 /* scanViewController.h */,
+				B6B5ECBD2199C24600342349 /* scanViewController.m */,
+				B6B5ECB62199C24500342349 /* WSLCreateQRCodeController.h */,
+				B6B5ECB92199C24500342349 /* WSLCreateQRCodeController.m */,
+				B6B5ECBB2199C24500342349 /* WSLNativeScanTool.h */,
+				B6B5ECB82199C24500342349 /* WSLNativeScanTool.m */,
+				B6B5ECBC2199C24600342349 /* WSLScanView.h */,
+				B6B5ECB72199C24500342349 /* WSLScanView.m */,
 			);
 			path = Scan;
 			sourceTree = "<group>";
@@ -349,8 +367,8 @@
 				B683E46D20623C88005D4DBC /* Photo.m */,
 				B683E47320623E62005D4DBC /* UIImage+UIImageExt.h */,
 				B683E47220623E61005D4DBC /* UIImage+UIImageExt.m */,
-				B683E46F20623CCD005D4DBC /* UIViewController+ImagePickerAndCamera.h */,
-				B683E47020623CCD005D4DBC /* UIViewController+ImagePickerAndCamera.m */,
+				B6B5ECC22199C25800342349 /* UIViewController+ImagePickerAndCamera.h */,
+				B6B5ECC32199C25800342349 /* UIViewController+ImagePickerAndCamera.m */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -400,6 +418,8 @@
 		B68C22C7206359A700084894 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				B6038F2E2197094D00F4BB7C /* Toast+UIView.h */,
+				B6038F2F2197094D00F4BB7C /* Toast+UIView.m */,
 				B6CCE19E205CC3DF00AD1E8D /* AppDelegate.h */,
 				B6CCE19F205CC3DF00AD1E8D /* AppDelegate.m */,
 				B683E45A20620BC7005D4DBC /* BridgeDelegate.h */,
@@ -702,19 +722,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B5ECBF2199C24600342349 /* WSLNativeScanTool.m in Sources */,
+				B6B5ECC12199C24600342349 /* scanViewController.m in Sources */,
+				B6038F302197094D00F4BB7C /* Toast+UIView.m in Sources */,
 				B6CCE1A3205CC3DF00AD1E8D /* ViewController.m in Sources */,
 				B683E466206232E8005D4DBC /* BaseObject.m in Sources */,
 				B683E48E20624A63005D4DBC /* sdkCall.m in Sources */,
-				B683E46220623038005D4DBC /* scanViewController.m in Sources */,
 				B6B5CFD52068F1D400F0DF1F /* XMLDictionary.m in Sources */,
+				B6B5ECC02199C24600342349 /* WSLCreateQRCodeController.m in Sources */,
 				6B38D334212BBB7200BD1A81 /* AlipayClass.m in Sources */,
 				B6CCE1D5205CECD700AD1E8D /* LocationManager.m in Sources */,
 				B67468892068CCB2007F4A3A /* AFHTTPSessionManager.m in Sources */,
 				B6E5E5F320611669004F3D95 /* ActionDispose.m in Sources */,
 				B6CCE1AE205CC3DF00AD1E8D /* main.m in Sources */,
+				B6B5ECC42199C25900342349 /* UIViewController+ImagePickerAndCamera.m in Sources */,
 				B683E47420623E62005D4DBC /* UIImage+UIImageExt.m in Sources */,
 				B6CCE1CF205CC66600AD1E8D /* WechatClass.m in Sources */,
-				B683E47120623CCD005D4DBC /* UIViewController+ImagePickerAndCamera.m in Sources */,
 				B674688C2068CCB2007F4A3A /* AFNetworkReachabilityManager.m in Sources */,
 				B6CCE1D8205CF00700AD1E8D /* CLLocation+YCLocation.m in Sources */,
 				B683E46E20623C88005D4DBC /* Photo.m in Sources */,
@@ -724,6 +747,7 @@
 				B674688D2068CCB2007F4A3A /* AFSecurityPolicy.m in Sources */,
 				B67468882068CCB2007F4A3A /* AFURLResponseSerialization.m in Sources */,
 				B67468792068CC54007F4A3A /* netWorking.m in Sources */,
+				B6B5ECBE2199C24600342349 /* WSLScanView.m in Sources */,
 				B674688A2068CCB2007F4A3A /* AFURLSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -882,7 +906,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chenfengguanggao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.btpaywallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -926,7 +950,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chenfengguanggao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.btpaywallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -36,7 +36,7 @@
 //    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
     self.window.rootViewController = [[ViewController alloc]init];
     //微信注册
-    [WXApi registerApp:weChatAppId];
+//    [WXApi registerApp:weChatAppId];
 //    //微博注册
 //    [WeiboSDK registerApp:weiboAppId];
 //    //QQ注册

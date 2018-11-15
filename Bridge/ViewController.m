@@ -12,6 +12,8 @@
 #import "WechatClass.h"
 #import "JPUSHService.h"
 #import <Gigi/Gigi.h>
+#import "Toast+UIView.h"
+#import <Photos/Photos.h>
 
 #define getNavHight  self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height
 
@@ -239,12 +241,41 @@ extern id<BridgeDelegate>AlipayRequestDelegate;
     }
     else if ([message.name isEqualToString:SavePhotoProtocol]){
         
-        
+        NSMutableString *baseimg = [[NSMutableString alloc]initWithString:param[@"img"]];
+        [baseimg deleteCharactersInRange:NSMakeRange(0, 22)];
+        NSData *decodeData = [[NSData alloc]initWithBase64EncodedString:baseimg options:(NSDataBase64DecodingIgnoreUnknownCharacters)];
+        // 将NSData转为UIImage
+        UIImage *decodedImage = [UIImage imageWithData: decodeData];
+        [self savePhoto:decodedImage];
     }
     else if ([message.name isEqualToString:SaveTextProtocol]){
-        
-        
+        [self pasteText:param[@"String"]];
     }
+}
+
+#pragma mark - 复制文字到剪切板
+- (void)pasteText:(NSString *)text{
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+    pasteboard.string = text;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.view makeToast:@"内容已复制，可粘贴使用！" duration:1 position:@"center"];
+    });
+}
+
+#pragma mark - 保存相片到相册
+- (void)savePhoto:(UIImage *)image{
+    [[PHPhotoLibrary sharedPhotoLibrary]performChanges:^{
+        [PHAssetChangeRequest creationRequestForAssetFromImage:image];
+    } completionHandler:^(BOOL success, NSError * _Nullable error) {
+        if (error) {
+            [self.view makeToast:@"相片保存失败" duration:1 position:@"center"];
+            NSLog(@"%@",@"保存失败");
+        } else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.view makeToast:@"相片保存成功" duration:1 position:@"center"];
+            });
+        }
+    }];
 }
 
 - (void)onFileInputClicked {
@@ -316,23 +347,39 @@ extern id<BridgeDelegate>AlipayRequestDelegate;
 
 #pragma mark - 拦截JS 弹窗
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
-    
-//    NSLog(@"%s", __FUNCTION__);
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
-    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completionHandler();
-    }]];
-    
-    [self presentViewController:alert animated:YES completion:NULL];
+    completionHandler();
+//    //    NSLog(@"%s", __FUNCTION__);
+//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
+//    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        completionHandler();
+//    }]];
+//
+//    [self presentViewController:alert animated:YES completion:NULL];
 }
 
-- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler{
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
-    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completionHandler(YES);
-    }]];
+- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler{
+    completionHandler(YES);
+    //    DLOG(@"msg = %@ frmae = %@",message,frame);
+//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:message?:@"" preferredStyle:UIAlertControllerStyleAlert];
+//    [alertController addAction:([UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+//        completionHandler(NO);
+//    }])];
+//    [alertController addAction:([UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        completionHandler(YES);
+//    }])];
+//    [self presentViewController:alertController animated:YES completion:nil];
 }
-
+- (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable))completionHandler{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:prompt message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.text = defaultText;
+    }];
+    [alertController addAction:([UIAlertAction actionWithTitle:@"完成" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler(alertController.textFields[0].text?:@"");
+    }])];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 
 #pragma mark - 进度条
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context

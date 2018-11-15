@@ -10,8 +10,8 @@
 #define DadaConst_h
 
 //新版本需要用到的宏
-#define CLIENT_ID @"102296"    //商户唯一ID，必须配置对
-#define mainURL @"http://www.ms0559.cc/Newmobile/User/login.html"//https://qt.qtlight.com/home/moto
+#define CLIENT_ID @"102243"    //商户唯一ID，必须配置对
+#define mainURL @"http://btpaywallet.com/"//https://qt.qtlight.com/home/moto
 #define weChatAppId @"wx0d4ab2b757694cbd"
 #define JPush  @"9bb492e2156cb03e732c189a"
 
