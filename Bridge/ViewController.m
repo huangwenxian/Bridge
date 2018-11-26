@@ -101,6 +101,7 @@ extern id<BridgeDelegate>AlipayRequestDelegate;
     [self.view addSubview:self.progressView];
     [self.webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:NULL];
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:NULL];
+    
 }
 
 #pragma mark - OC Callback to JS
@@ -177,7 +178,6 @@ extern id<BridgeDelegate>AlipayRequestDelegate;
             }
         }];
     }
-   
 }
 
 #pragma mark - 读取退出cookie

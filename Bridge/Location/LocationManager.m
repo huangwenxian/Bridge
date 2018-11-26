@@ -73,7 +73,7 @@ id<BridgeDelegate>MapRequestDelegate;
     if (openQQmap) {
         [maps addObject:qqmap];
     }
-    [maps addObject:applemap];
+//    [maps addObject:applemap];
     UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"选择导航使用的地图应用" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
     for (int i = 0; i < maps.count; ++i) {
@@ -101,14 +101,15 @@ id<BridgeDelegate>MapRequestDelegate;
 
 #pragma mark - 打开苹果地图
 - (void)openAppleMap{
-    
-    CLLocationCoordinate2D from =_curLoc.coordinate;
+    CLLocation *newCurLoc = [_curLoc locationEarthFromMars];
+    CLLocationCoordinate2D from =newCurLoc.coordinate;
     MKPlacemark *curPlacemark = [[MKPlacemark alloc]initWithCoordinate:from];
     MKMapItem *curItem = [[MKMapItem alloc]initWithPlacemark:curPlacemark];
     curItem.name = @"我的位置";
     
     //终点
-    CLLocationCoordinate2D to =_toLoc.coordinate;
+    CLLocation *newToLoc = [_toLoc locationEarthFromMars];
+    CLLocationCoordinate2D to =newToLoc.coordinate;
     MKPlacemark *toPlacemark = [[MKPlacemark alloc]initWithCoordinate:to];
     MKMapItem *toItem = [[MKMapItem alloc]initWithPlacemark:toPlacemark];
     curItem.name = @"终点";
@@ -127,8 +128,8 @@ id<BridgeDelegate>MapRequestDelegate;
 
 #pragma mark - 打开高德地图
 - (void)openGaodeMap{
-    
-    NSString *urlString = [[NSString stringWithFormat:@"iosamap://path?sourceApplication=applicationName&sid=BGVIS1&slat=%f&slon=%f&sname=%@&did=BGVIS2&dlat=%f&dlon=%f&dname=%@&dev=0&m=0&t=0",_curLoc.coordinate.latitude,_curLoc.coordinate.longitude,@"我的位置",_toLoc.coordinate.latitude,_toLoc.coordinate.longitude,@"终点"]stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    CLLocation *newToLoc = [_toLoc locationMarsFromBaidu];
+    NSString *urlString = [[NSString stringWithFormat:@"iosamap://path?sourceApplication=applicationName&sid=BGVIS1&slat=%f&slon=%f&sname=%@&did=BGVIS2&dlat=%f&dlon=%f&dname=%@&dev=0&m=0&t=0",_curLoc.coordinate.latitude,_curLoc.coordinate.longitude,@"我的位置",newToLoc.coordinate.latitude,newToLoc.coordinate.longitude,@"终点"]stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *r = [NSURL URLWithString:urlString];
     [[UIApplication sharedApplication] openURL:r];
 }
@@ -136,8 +137,8 @@ id<BridgeDelegate>MapRequestDelegate;
 #pragma mark - 打开百度地图
 - (void)openBaiduMap{
     //需要转换坐标系
-    CLLocation *newCurLoc = [_curLoc locationMarsFromBaidu];
-    CLLocation *newToLoc = [_toLoc locationMarsFromBaidu];
+    CLLocation *newCurLoc = [_curLoc locationMarsFromEarth];
+    CLLocation *newToLoc = _toLoc;
     NSString *stringURL = [NSString stringWithFormat:@"baidumap://map/direction?origin=%f,%f&destination=%f,%f&&mode=driving",newCurLoc.coordinate.latitude,newCurLoc.coordinate.longitude,newToLoc.coordinate.latitude,newToLoc.coordinate.longitude];
     NSURL *url = [NSURL URLWithString:stringURL];
     [[UIApplication sharedApplication] openURL:url];
