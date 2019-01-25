@@ -11,6 +11,10 @@
 #import "UIImage+UIImageExt.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "YBCustomCameraVC.h"
+#import "BLImagePickerViewController.h"
+#import "BLImageClipingViewController.h"
+#import "SelectedImageVC.h"
 
 const void * associateKey = @"ImagePickerAndCameraAssociateKey";
 
@@ -26,30 +30,32 @@ const void * associateKey = @"ImagePickerAndCameraAssociateKey";
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (actionSheet.tag == 2550) {
-        NSUInteger sourceType = 0;
-        // 判断系统是否支持相机
-        UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
-        if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-            imagePickerController.delegate = self; //设置代理
-            imagePickerController.allowsEditing = YES;
-            imagePickerController.sourceType = sourceType; //图片来源
-            if (buttonIndex == 0) {
-                //拍照
-                sourceType = UIImagePickerControllerSourceTypeCamera;
-                imagePickerController.sourceType = sourceType;
-                [self presentViewController:imagePickerController animated:YES completion:nil];
-            }else if (buttonIndex == 1) {
-                //相册
-                sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-                imagePickerController.sourceType = sourceType;
-                [self presentViewController:imagePickerController animated:YES completion:nil];
-            }else if (buttonIndex == 2){
-                return;
-            }
-        }else {
-            sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-            imagePickerController.sourceType = sourceType;
-            [self presentViewController:imagePickerController animated:YES completion:nil];
+        if (buttonIndex == 0) {
+            //拍照
+            YBCustomCameraVC *vc = [[YBCustomCameraVC alloc]init];
+            vc.CompleteBlock = ^(UIImage *image) {
+                self.CompleteBlock(image);
+            };
+            [self presentViewController:vc animated:YES completion:nil];
+        }else if (buttonIndex == 1) {
+            //相册
+            BLImagePickerViewController *imgVc = [[BLImagePickerViewController alloc]init];
+            UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:imgVc];
+            imgVc.imageClipping = NO;
+            imgVc.showCamera = NO;
+            imgVc.maxNum = 1;
+            imgVc.clippingItemSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT);
+            [imgVc initDataProgress:^(CGFloat progress) {
+                
+            } finished:^(NSArray<UIImage *> *resultAry, NSArray<PHAsset *> *assetsArry, UIImage *editedImage) {
+                self.CompleteBlock(resultAry[0]);
+                
+            } cancle:^(NSString *cancleStr) {
+                
+            }];
+            [self presentViewController:nav animated:YES completion:nil];
+        }else if (buttonIndex == 2){
+            return;
         }
     }
 }
@@ -64,37 +70,5 @@ const void * associateKey = @"ImagePickerAndCameraAssociateKey";
 }
 
 
-
-//当选择一张图片后进入这里
--(void)imagePickerController:(UIImagePickerController*)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    NSString *type = [info objectForKey:UIImagePickerControllerMediaType];
-    //当选择的类型是图片
-    if ([type isEqualToString:@"public.image"])
-    {
-        //先把图片转成NSData
-        UIImage* image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
-        NSData *data;
-        if (UIImageJPEGRepresentation(image,0.3) != nil)
-        {
-            data = UIImageJPEGRepresentation(image, 0.3);
-        }
-        else
-        {
-            data = UIImagePNGRepresentation(image);
-        }
-        image = [UIImage imageWithData:data];
-        UIImage *image1 = [image imageByScalingAndCroppingForSize:CGSizeMake(300, 300)];
-        
-        //关闭相册、相机界面
-        [picker dismissViewControllerAnimated:YES completion:nil];
-        
-        self.CompleteBlock(image1);
-    }
-}
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-{
-    [picker dismissViewControllerAnimated:YES completion:nil];
-}
 @end
+

@@ -11,7 +11,7 @@
 
 //新版本需要用到的宏
 #define CLIENT_ID @"102243"    //商户唯一ID，必须配置对
-#define mainURL @"http://www.baidu.com/"//https://qt.qtlight.com/home/moto
+#define mainURL @"http://www.zhfxsc.cn/"//https://qt.qtlight.com/home/moto
 #define weChatAppId @"wx0d4ab2b757694cbd"
 #define JPush  @"9bb492e2156cb03e732c189a"
 

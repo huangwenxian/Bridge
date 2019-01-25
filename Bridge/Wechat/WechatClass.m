@@ -28,7 +28,7 @@ id<BridgeDelegate>WechatRequestDelegate;
     }
     else
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付失败" message:@"拉起微信支付失败，请联系商家" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"登录失败" message:@"拉起微信失败，请检查微信后台参数" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
 }
@@ -49,8 +49,8 @@ id<BridgeDelegate>WechatRequestDelegate;
     }
     else
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付失败" message:@"拉起微信支付失败，请联系商家" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付失败" message:@"拉起微信支付失败，请联系商家" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+//        [alert show];
     }
 }
 

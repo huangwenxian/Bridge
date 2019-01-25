@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>CN</string>
 	<key>CFBundleDisplayName</key>
-	<string>BT Wallet</string>
+	<string>租圈</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -23,7 +23,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.chenfengguanggao</string>
+				<string>com.zuquan</string>
 			</array>
 		</dict>
 		<dict>

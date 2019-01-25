@@ -46,7 +46,6 @@ extern id<BridgeDelegate>AlipayRequestDelegate;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
     //遵守数据回传代理
     MapRequestDelegate = self;
     ScanRequestDelegate = self;
@@ -101,7 +100,37 @@ extern id<BridgeDelegate>AlipayRequestDelegate;
     [self.view addSubview:self.progressView];
     [self.webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:NULL];
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:NULL];
-    
+    [self RechabilityNetWork];
+}
+
+#pragma mark - 网络监听，初始化SDK
+- (void)RechabilityNetWork{
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    [manager startMonitoring];
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        switch (status) {
+            case AFNetworkReachabilityStatusNotReachable:
+                
+                break;
+            case AFNetworkReachabilityStatusUnknown:
+                
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:{
+                NSMutableURLRequest *request= [NSMutableURLRequest requestWithURL:[NSURL URLWithString:mainURL]];
+                [self.webView loadRequest:request];
+            }
+                
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:{
+                NSMutableURLRequest *request= [NSMutableURLRequest requestWithURL:[NSURL URLWithString:mainURL]];
+                [self.webView loadRequest:request];
+            }
+                break;
+                
+            default:
+                break;
+        }
+    }];
 }
 
 #pragma mark - OC Callback to JS
@@ -158,14 +187,17 @@ extern id<BridgeDelegate>AlipayRequestDelegate;
 }
 
 
-
-
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
-    NSString *requestURL = navigationAction.request.URL.absoluteString;
     if (navigationAction.targetFrame == nil) {
         [self.webView loadRequest:navigationAction.request];
     }
-    decisionHandler(WKNavigationResponsePolicyAllow);
+    NSString *url = [navigationAction.request.URL.absoluteString stringByRemovingPercentEncoding];
+    if ([url containsString:@"alipays://"]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+        decisionHandler(WKNavigationActionPolicyAllow);
+        return;
+    }
+    decisionHandler(WKNavigationActionPolicyAllow);
 }
 
 #pragma mark - 在APP启动时，如果本地有Cookie就传给JS。必须要防止JS每次 重新location页面都调用
@@ -268,8 +300,9 @@ extern id<BridgeDelegate>AlipayRequestDelegate;
         [PHAssetChangeRequest creationRequestForAssetFromImage:image];
     } completionHandler:^(BOOL success, NSError * _Nullable error) {
         if (error) {
-            [self.view makeToast:@"相片保存失败" duration:1 position:@"center"];
-            NSLog(@"%@",@"保存失败");
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.view makeToast:@"相片保存失败" duration:1 position:@"center"];
+            });
         } else {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.view makeToast:@"相片保存成功" duration:1 position:@"center"];

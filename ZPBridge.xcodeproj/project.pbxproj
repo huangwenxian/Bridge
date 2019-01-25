@@ -11,6 +11,33 @@
 		6B545F6C2177115E001DF05F /* Gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B545F6B2177115E001DF05F /* Gigi.framework */; };
 		6B545F6D21771165001DF05F /* Gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B545F6B2177115E001DF05F /* Gigi.framework */; };
 		6B545F6E21771165001DF05F /* Gigi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B545F6B2177115E001DF05F /* Gigi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6BE0D73F21DEFDC40040E330 /* YBCustomCameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D73D21DEFDC30040E330 /* YBCustomCameraVC.m */; };
+		6BE0D74221DF02920040E330 /* RTPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D74121DF02920040E330 /* RTPhotoManager.m */; };
+		6BE0D77C21DF06280040E330 /* BLPickerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D74621DF06280040E330 /* BLPickerBaseViewController.m */; };
+		6BE0D77D21DF06280040E330 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D74921DF06280040E330 /* UIView+Addition.m */; };
+		6BE0D77E21DF06280040E330 /* BLImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D74C21DF06280040E330 /* BLImageHelper.m */; };
+		6BE0D77F21DF06280040E330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE0D74D21DF06280040E330 /* Assets.xcassets */; };
+		6BE0D78021DF06280040E330 /* PHAsset+AddFlag.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D74E21DF06280040E330 /* PHAsset+AddFlag.m */; };
+		6BE0D78121DF06280040E330 /* BLPhotoGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D75421DF06280040E330 /* BLPhotoGroupCell.m */; };
+		6BE0D78221DF06280040E330 /* BLImageGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D75521DF06280040E330 /* BLImageGroupViewController.m */; };
+		6BE0D78321DF06280040E330 /* BLPresentTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D75721DF06280040E330 /* BLPresentTransitionAnimator.m */; };
+		6BE0D78421DF06280040E330 /* BLTransitionInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D75921DF06280040E330 /* BLTransitionInteraction.m */; };
+		6BE0D78521DF06280040E330 /* BLTabBarTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D75A21DF06280040E330 /* BLTabBarTransitionAnimator.m */; };
+		6BE0D78621DF06280040E330 /* BLPushTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D75C21DF06280040E330 /* BLPushTransitionAnimator.m */; };
+		6BE0D78721DF06280040E330 /* UINavigationController+BLPushTrasition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D75E21DF06280040E330 /* UINavigationController+BLPushTrasition.m */; };
+		6BE0D78821DF06280040E330 /* UIViewController+BLPresentTrasition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D75F21DF06280040E330 /* UIViewController+BLPresentTrasition.m */; };
+		6BE0D78921DF06280040E330 /* BLDIYTrasitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D76321DF06280040E330 /* BLDIYTrasitionAnimation.m */; };
+		6BE0D78A21DF06280040E330 /* BLPreviewImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D76821DF06280040E330 /* BLPreviewImageViewController.m */; };
+		6BE0D78B21DF06280040E330 /* BLPreviewImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D76A21DF06280040E330 /* BLPreviewImageCell.m */; };
+		6BE0D78C21DF06280040E330 /* BLPreviewImageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D76B21DF06280040E330 /* BLPreviewImageHeaderView.m */; };
+		6BE0D78D21DF06280040E330 /* BLPreviewImageFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D76E21DF06280040E330 /* BLPreviewImageFooterView.m */; };
+		6BE0D78E21DF06280040E330 /* BLListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D77221DF06280040E330 /* BLListCollectionViewCell.m */; };
+		6BE0D78F21DF06280040E330 /* BLImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE0D77321DF06280040E330 /* BLImagePicker.storyboard */; };
+		6BE0D79021DF06280040E330 /* BLListFooterReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D77621DF06280040E330 /* BLListFooterReusableView.m */; };
+		6BE0D79121DF06280040E330 /* BLPhotoListFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D77721DF06280040E330 /* BLPhotoListFooterView.m */; };
+		6BE0D79221DF06280040E330 /* BLImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D77821DF06280040E330 /* BLImagePickerViewController.m */; };
+		6BE0D79321DF06280040E330 /* BLImageClipingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D77A21DF06280040E330 /* BLImageClipingViewController.m */; };
+		6BE0D79621DF06CA0040E330 /* SelectedImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0D79521DF06CA0040E330 /* SelectedImageVC.m */; };
 		B6038F302197094D00F4BB7C /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6038F2F2197094D00F4BB7C /* Toast+UIView.m */; };
 		B67468792068CC54007F4A3A /* netWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = B67468782068CC54007F4A3A /* netWorking.m */; };
 		B67468882068CCB2007F4A3A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B674687F2068CCB2007F4A3A /* AFURLResponseSerialization.m */; };
@@ -87,6 +114,61 @@
 		6B38D332212BBB7200BD1A81 /* AlipayClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlipayClass.h; sourceTree = "<group>"; };
 		6B38D333212BBB7200BD1A81 /* AlipayClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlipayClass.m; sourceTree = "<group>"; };
 		6B545F6B2177115E001DF05F /* Gigi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gigi.framework; sourceTree = "<group>"; };
+		6BE0D73D21DEFDC30040E330 /* YBCustomCameraVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCustomCameraVC.m; sourceTree = "<group>"; };
+		6BE0D73E21DEFDC40040E330 /* YBCustomCameraVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCustomCameraVC.h; sourceTree = "<group>"; };
+		6BE0D74021DF02920040E330 /* RTPhotoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPhotoManager.h; sourceTree = "<group>"; };
+		6BE0D74121DF02920040E330 /* RTPhotoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPhotoManager.m; sourceTree = "<group>"; };
+		6BE0D74421DF06280040E330 /* BLImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLImagePickerViewController.h; sourceTree = "<group>"; };
+		6BE0D74621DF06280040E330 /* BLPickerBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPickerBaseViewController.m; sourceTree = "<group>"; };
+		6BE0D74721DF06280040E330 /* PHAsset+AddFlag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAsset+AddFlag.h"; sourceTree = "<group>"; };
+		6BE0D74921DF06280040E330 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		6BE0D74A21DF06280040E330 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		6BE0D74B21DF06280040E330 /* BLPickerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPickerConfig.h; sourceTree = "<group>"; };
+		6BE0D74C21DF06280040E330 /* BLImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLImageHelper.m; sourceTree = "<group>"; };
+		6BE0D74D21DF06280040E330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BE0D74E21DF06280040E330 /* PHAsset+AddFlag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAsset+AddFlag.m"; sourceTree = "<group>"; };
+		6BE0D74F21DF06280040E330 /* BLPickerBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPickerBaseViewController.h; sourceTree = "<group>"; };
+		6BE0D75021DF06280040E330 /* BLImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLImageHelper.h; sourceTree = "<group>"; };
+		6BE0D75221DF06280040E330 /* BLPhotoGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPhotoGroupCell.h; sourceTree = "<group>"; };
+		6BE0D75321DF06280040E330 /* BLImageGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLImageGroupViewController.h; sourceTree = "<group>"; };
+		6BE0D75421DF06280040E330 /* BLPhotoGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPhotoGroupCell.m; sourceTree = "<group>"; };
+		6BE0D75521DF06280040E330 /* BLImageGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLImageGroupViewController.m; sourceTree = "<group>"; };
+		6BE0D75721DF06280040E330 /* BLPresentTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPresentTransitionAnimator.m; sourceTree = "<group>"; };
+		6BE0D75821DF06280040E330 /* UIViewController+BLPresentTrasition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BLPresentTrasition.h"; sourceTree = "<group>"; };
+		6BE0D75921DF06280040E330 /* BLTransitionInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTransitionInteraction.m; sourceTree = "<group>"; };
+		6BE0D75A21DF06280040E330 /* BLTabBarTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTabBarTransitionAnimator.m; sourceTree = "<group>"; };
+		6BE0D75B21DF06280040E330 /* BLDIYTrasitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDIYTrasitionAnimation.h; sourceTree = "<group>"; };
+		6BE0D75C21DF06280040E330 /* BLPushTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPushTransitionAnimator.m; sourceTree = "<group>"; };
+		6BE0D75D21DF06280040E330 /* BLTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTransitionAnimator.h; sourceTree = "<group>"; };
+		6BE0D75E21DF06280040E330 /* UINavigationController+BLPushTrasition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+BLPushTrasition.m"; sourceTree = "<group>"; };
+		6BE0D75F21DF06280040E330 /* UIViewController+BLPresentTrasition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BLPresentTrasition.m"; sourceTree = "<group>"; };
+		6BE0D76021DF06280040E330 /* BLTrasitionAnimatorConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTrasitionAnimatorConfig.h; sourceTree = "<group>"; };
+		6BE0D76121DF06280040E330 /* BLPresentTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPresentTransitionAnimator.h; sourceTree = "<group>"; };
+		6BE0D76221DF06280040E330 /* BLTabBarTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTabBarTransitionAnimator.h; sourceTree = "<group>"; };
+		6BE0D76321DF06280040E330 /* BLDIYTrasitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDIYTrasitionAnimation.m; sourceTree = "<group>"; };
+		6BE0D76421DF06280040E330 /* BLTransitionInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTransitionInteraction.h; sourceTree = "<group>"; };
+		6BE0D76521DF06280040E330 /* BLPushTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPushTransitionAnimator.h; sourceTree = "<group>"; };
+		6BE0D76621DF06280040E330 /* UINavigationController+BLPushTrasition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+BLPushTrasition.h"; sourceTree = "<group>"; };
+		6BE0D76821DF06280040E330 /* BLPreviewImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPreviewImageViewController.m; sourceTree = "<group>"; };
+		6BE0D76921DF06280040E330 /* BLPreviewImageFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPreviewImageFooterView.h; sourceTree = "<group>"; };
+		6BE0D76A21DF06280040E330 /* BLPreviewImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPreviewImageCell.m; sourceTree = "<group>"; };
+		6BE0D76B21DF06280040E330 /* BLPreviewImageHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPreviewImageHeaderView.m; sourceTree = "<group>"; };
+		6BE0D76C21DF06280040E330 /* BLPreviewImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPreviewImageViewController.h; sourceTree = "<group>"; };
+		6BE0D76D21DF06280040E330 /* BLPreviewImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPreviewImageCell.h; sourceTree = "<group>"; };
+		6BE0D76E21DF06280040E330 /* BLPreviewImageFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPreviewImageFooterView.m; sourceTree = "<group>"; };
+		6BE0D76F21DF06280040E330 /* BLPreviewImageHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPreviewImageHeaderView.h; sourceTree = "<group>"; };
+		6BE0D77121DF06280040E330 /* BLListFooterReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLListFooterReusableView.h; sourceTree = "<group>"; };
+		6BE0D77221DF06280040E330 /* BLListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLListCollectionViewCell.m; sourceTree = "<group>"; };
+		6BE0D77321DF06280040E330 /* BLImagePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BLImagePicker.storyboard; sourceTree = "<group>"; };
+		6BE0D77421DF06280040E330 /* BLPhotoListFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPhotoListFooterView.h; sourceTree = "<group>"; };
+		6BE0D77521DF06280040E330 /* BLListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLListCollectionViewCell.h; sourceTree = "<group>"; };
+		6BE0D77621DF06280040E330 /* BLListFooterReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLListFooterReusableView.m; sourceTree = "<group>"; };
+		6BE0D77721DF06280040E330 /* BLPhotoListFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPhotoListFooterView.m; sourceTree = "<group>"; };
+		6BE0D77821DF06280040E330 /* BLImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLImagePickerViewController.m; sourceTree = "<group>"; };
+		6BE0D77A21DF06280040E330 /* BLImageClipingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLImageClipingViewController.m; sourceTree = "<group>"; };
+		6BE0D77B21DF06280040E330 /* BLImageClipingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLImageClipingViewController.h; sourceTree = "<group>"; };
+		6BE0D79421DF06CA0040E330 /* SelectedImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedImageVC.h; sourceTree = "<group>"; };
+		6BE0D79521DF06CA0040E330 /* SelectedImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedImageVC.m; sourceTree = "<group>"; };
 		B6038F2E2197094D00F4BB7C /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
 		B6038F2F2197094D00F4BB7C /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
 		B67468772068CC53007F4A3A /* netWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netWorking.h; sourceTree = "<group>"; };
@@ -311,6 +393,118 @@
 			path = Alipay;
 			sourceTree = "<group>";
 		};
+		6BE0D74321DF06280040E330 /* BlImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				6BE0D74421DF06280040E330 /* BLImagePickerViewController.h */,
+				6BE0D74521DF06280040E330 /* BlImageConfig */,
+				6BE0D75121DF06280040E330 /* BlPhotoAlbum */,
+				6BE0D75621DF06280040E330 /* BLTransitionAnimation */,
+				6BE0D76721DF06280040E330 /* BlImagepreview */,
+				6BE0D77021DF06280040E330 /* BlImageList */,
+				6BE0D77821DF06280040E330 /* BLImagePickerViewController.m */,
+				6BE0D77921DF06280040E330 /* BlImageClipping */,
+			);
+			path = BlImagePickerController;
+			sourceTree = "<group>";
+		};
+		6BE0D74521DF06280040E330 /* BlImageConfig */ = {
+			isa = PBXGroup;
+			children = (
+				6BE0D74621DF06280040E330 /* BLPickerBaseViewController.m */,
+				6BE0D74721DF06280040E330 /* PHAsset+AddFlag.h */,
+				6BE0D74821DF06280040E330 /* UIview+Addtion */,
+				6BE0D74B21DF06280040E330 /* BLPickerConfig.h */,
+				6BE0D74C21DF06280040E330 /* BLImageHelper.m */,
+				6BE0D74D21DF06280040E330 /* Assets.xcassets */,
+				6BE0D74E21DF06280040E330 /* PHAsset+AddFlag.m */,
+				6BE0D74F21DF06280040E330 /* BLPickerBaseViewController.h */,
+				6BE0D75021DF06280040E330 /* BLImageHelper.h */,
+			);
+			path = BlImageConfig;
+			sourceTree = "<group>";
+		};
+		6BE0D74821DF06280040E330 /* UIview+Addtion */ = {
+			isa = PBXGroup;
+			children = (
+				6BE0D74921DF06280040E330 /* UIView+Addition.m */,
+				6BE0D74A21DF06280040E330 /* UIView+Addition.h */,
+			);
+			path = "UIview+Addtion";
+			sourceTree = "<group>";
+		};
+		6BE0D75121DF06280040E330 /* BlPhotoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				6BE0D75221DF06280040E330 /* BLPhotoGroupCell.h */,
+				6BE0D75321DF06280040E330 /* BLImageGroupViewController.h */,
+				6BE0D75421DF06280040E330 /* BLPhotoGroupCell.m */,
+				6BE0D75521DF06280040E330 /* BLImageGroupViewController.m */,
+			);
+			path = BlPhotoAlbum;
+			sourceTree = "<group>";
+		};
+		6BE0D75621DF06280040E330 /* BLTransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				6BE0D75721DF06280040E330 /* BLPresentTransitionAnimator.m */,
+				6BE0D75821DF06280040E330 /* UIViewController+BLPresentTrasition.h */,
+				6BE0D75921DF06280040E330 /* BLTransitionInteraction.m */,
+				6BE0D75A21DF06280040E330 /* BLTabBarTransitionAnimator.m */,
+				6BE0D75B21DF06280040E330 /* BLDIYTrasitionAnimation.h */,
+				6BE0D75C21DF06280040E330 /* BLPushTransitionAnimator.m */,
+				6BE0D75D21DF06280040E330 /* BLTransitionAnimator.h */,
+				6BE0D75E21DF06280040E330 /* UINavigationController+BLPushTrasition.m */,
+				6BE0D75F21DF06280040E330 /* UIViewController+BLPresentTrasition.m */,
+				6BE0D76021DF06280040E330 /* BLTrasitionAnimatorConfig.h */,
+				6BE0D76121DF06280040E330 /* BLPresentTransitionAnimator.h */,
+				6BE0D76221DF06280040E330 /* BLTabBarTransitionAnimator.h */,
+				6BE0D76321DF06280040E330 /* BLDIYTrasitionAnimation.m */,
+				6BE0D76421DF06280040E330 /* BLTransitionInteraction.h */,
+				6BE0D76521DF06280040E330 /* BLPushTransitionAnimator.h */,
+				6BE0D76621DF06280040E330 /* UINavigationController+BLPushTrasition.h */,
+			);
+			path = BLTransitionAnimation;
+			sourceTree = "<group>";
+		};
+		6BE0D76721DF06280040E330 /* BlImagepreview */ = {
+			isa = PBXGroup;
+			children = (
+				6BE0D76821DF06280040E330 /* BLPreviewImageViewController.m */,
+				6BE0D76921DF06280040E330 /* BLPreviewImageFooterView.h */,
+				6BE0D76A21DF06280040E330 /* BLPreviewImageCell.m */,
+				6BE0D76B21DF06280040E330 /* BLPreviewImageHeaderView.m */,
+				6BE0D76C21DF06280040E330 /* BLPreviewImageViewController.h */,
+				6BE0D76D21DF06280040E330 /* BLPreviewImageCell.h */,
+				6BE0D76E21DF06280040E330 /* BLPreviewImageFooterView.m */,
+				6BE0D76F21DF06280040E330 /* BLPreviewImageHeaderView.h */,
+			);
+			path = BlImagepreview;
+			sourceTree = "<group>";
+		};
+		6BE0D77021DF06280040E330 /* BlImageList */ = {
+			isa = PBXGroup;
+			children = (
+				6BE0D77121DF06280040E330 /* BLListFooterReusableView.h */,
+				6BE0D77221DF06280040E330 /* BLListCollectionViewCell.m */,
+				6BE0D77321DF06280040E330 /* BLImagePicker.storyboard */,
+				6BE0D77421DF06280040E330 /* BLPhotoListFooterView.h */,
+				6BE0D77521DF06280040E330 /* BLListCollectionViewCell.h */,
+				6BE0D77621DF06280040E330 /* BLListFooterReusableView.m */,
+				6BE0D77721DF06280040E330 /* BLPhotoListFooterView.m */,
+			);
+			path = BlImageList;
+			sourceTree = "<group>";
+		};
+		6BE0D77921DF06280040E330 /* BlImageClipping */ = {
+			isa = PBXGroup;
+			children = (
+				6BE0D77A21DF06280040E330 /* BLImageClipingViewController.m */,
+				6BE0D77B21DF06280040E330 /* BLImageClipingViewController.h */,
+			);
+			path = BlImageClipping;
+			sourceTree = "<group>";
+		};
 		B67468762068CC4C007F4A3A /* networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +563,13 @@
 				B683E47220623E61005D4DBC /* UIImage+UIImageExt.m */,
 				B6B5ECC22199C25800342349 /* UIViewController+ImagePickerAndCamera.h */,
 				B6B5ECC32199C25800342349 /* UIViewController+ImagePickerAndCamera.m */,
+				6BE0D73E21DEFDC40040E330 /* YBCustomCameraVC.h */,
+				6BE0D73D21DEFDC30040E330 /* YBCustomCameraVC.m */,
+				6BE0D74021DF02920040E330 /* RTPhotoManager.h */,
+				6BE0D74121DF02920040E330 /* RTPhotoManager.m */,
+				6BE0D79421DF06CA0040E330 /* SelectedImageVC.h */,
+				6BE0D79521DF06CA0040E330 /* SelectedImageVC.m */,
+				6BE0D74321DF06280040E330 /* BlImagePickerController */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -710,7 +911,9 @@
 				B6CCE1A8205CC3DF00AD1E8D /* Assets.xcassets in Resources */,
 				B6B5D0472068F6CA00F0DF1F /* AlipaySDK.bundle in Resources */,
 				B68C22BF2063580A00084894 /* WeiboSDK.bundle in Resources */,
+				6BE0D77F21DF06280040E330 /* Assets.xcassets in Resources */,
 				B6B5CFD12068F17C00F0DF1F /* README.txt in Resources */,
+				6BE0D78F21DF06280040E330 /* BLImagePicker.storyboard in Resources */,
 				B683E48C20624A63005D4DBC /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -724,29 +927,54 @@
 			files = (
 				B6B5ECBF2199C24600342349 /* WSLNativeScanTool.m in Sources */,
 				B6B5ECC12199C24600342349 /* scanViewController.m in Sources */,
+				6BE0D78E21DF06280040E330 /* BLListCollectionViewCell.m in Sources */,
 				B6038F302197094D00F4BB7C /* Toast+UIView.m in Sources */,
+				6BE0D78721DF06280040E330 /* UINavigationController+BLPushTrasition.m in Sources */,
 				B6CCE1A3205CC3DF00AD1E8D /* ViewController.m in Sources */,
 				B683E466206232E8005D4DBC /* BaseObject.m in Sources */,
+				6BE0D78321DF06280040E330 /* BLPresentTransitionAnimator.m in Sources */,
+				6BE0D78421DF06280040E330 /* BLTransitionInteraction.m in Sources */,
+				6BE0D74221DF02920040E330 /* RTPhotoManager.m in Sources */,
+				6BE0D78C21DF06280040E330 /* BLPreviewImageHeaderView.m in Sources */,
 				B683E48E20624A63005D4DBC /* sdkCall.m in Sources */,
+				6BE0D79021DF06280040E330 /* BLListFooterReusableView.m in Sources */,
+				6BE0D78021DF06280040E330 /* PHAsset+AddFlag.m in Sources */,
+				6BE0D78921DF06280040E330 /* BLDIYTrasitionAnimation.m in Sources */,
 				B6B5CFD52068F1D400F0DF1F /* XMLDictionary.m in Sources */,
+				6BE0D79221DF06280040E330 /* BLImagePickerViewController.m in Sources */,
 				B6B5ECC02199C24600342349 /* WSLCreateQRCodeController.m in Sources */,
+				6BE0D78121DF06280040E330 /* BLPhotoGroupCell.m in Sources */,
 				6B38D334212BBB7200BD1A81 /* AlipayClass.m in Sources */,
+				6BE0D79321DF06280040E330 /* BLImageClipingViewController.m in Sources */,
+				6BE0D78621DF06280040E330 /* BLPushTransitionAnimator.m in Sources */,
+				6BE0D79121DF06280040E330 /* BLPhotoListFooterView.m in Sources */,
 				B6CCE1D5205CECD700AD1E8D /* LocationManager.m in Sources */,
 				B67468892068CCB2007F4A3A /* AFHTTPSessionManager.m in Sources */,
+				6BE0D78D21DF06280040E330 /* BLPreviewImageFooterView.m in Sources */,
+				6BE0D78A21DF06280040E330 /* BLPreviewImageViewController.m in Sources */,
 				B6E5E5F320611669004F3D95 /* ActionDispose.m in Sources */,
+				6BE0D78521DF06280040E330 /* BLTabBarTransitionAnimator.m in Sources */,
 				B6CCE1AE205CC3DF00AD1E8D /* main.m in Sources */,
+				6BE0D77D21DF06280040E330 /* UIView+Addition.m in Sources */,
 				B6B5ECC42199C25900342349 /* UIViewController+ImagePickerAndCamera.m in Sources */,
 				B683E47420623E62005D4DBC /* UIImage+UIImageExt.m in Sources */,
 				B6CCE1CF205CC66600AD1E8D /* WechatClass.m in Sources */,
+				6BE0D78221DF06280040E330 /* BLImageGroupViewController.m in Sources */,
 				B674688C2068CCB2007F4A3A /* AFNetworkReachabilityManager.m in Sources */,
 				B6CCE1D8205CF00700AD1E8D /* CLLocation+YCLocation.m in Sources */,
 				B683E46E20623C88005D4DBC /* Photo.m in Sources */,
 				B683E45E2062299A005D4DBC /* Scan.m in Sources */,
 				B674688B2068CCB2007F4A3A /* AFURLRequestSerialization.m in Sources */,
+				6BE0D73F21DEFDC40040E330 /* YBCustomCameraVC.m in Sources */,
+				6BE0D78B21DF06280040E330 /* BLPreviewImageCell.m in Sources */,
 				B6CCE1A0205CC3DF00AD1E8D /* AppDelegate.m in Sources */,
 				B674688D2068CCB2007F4A3A /* AFSecurityPolicy.m in Sources */,
 				B67468882068CCB2007F4A3A /* AFURLResponseSerialization.m in Sources */,
+				6BE0D79621DF06CA0040E330 /* SelectedImageVC.m in Sources */,
+				6BE0D78821DF06280040E330 /* UIViewController+BLPresentTrasition.m in Sources */,
+				6BE0D77E21DF06280040E330 /* BLImageHelper.m in Sources */,
 				B67468792068CC54007F4A3A /* netWorking.m in Sources */,
+				6BE0D77C21DF06280040E330 /* BLPickerBaseViewController.m in Sources */,
 				B6B5ECBE2199C24600342349 /* WSLScanView.m in Sources */,
 				B674688A2068CCB2007F4A3A /* AFURLSessionManager.m in Sources */,
 			);
@@ -877,7 +1105,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3R33HG7QGG;
+				DEVELOPMENT_TEAM = B9VDBJPTGH;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -906,7 +1134,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.btpaywallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuquan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -921,7 +1149,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3R33HG7QGG;
+				DEVELOPMENT_TEAM = B9VDBJPTGH;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -950,7 +1178,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.btpaywallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuquan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
