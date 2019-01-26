@@ -54,23 +54,30 @@ id<BridgeDelegate>WechatRequestDelegate;
     }
 }
 
-+ (void)WXShare:(NSString *)type shareImg:(NSString *)imgUrl{
++ (void)WXShare:(NSString *)type shareImg:(NSDictionary *)param{
     if ([WXApi isWXAppInstalled]) {
-        WXImageObject *ext = [WXImageObject object];
-        // 小于10MB
-        ext.imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imgUrl]];
-        
-        WXMediaMessage *message = [WXMediaMessage message];
-        message.mediaObject = ext;
-        SendMessageToWXReq* req = [[SendMessageToWXReq alloc] init];
-        req.bText = NO;
-        req.message = message;
+        SendMessageToWXReq *req1 = [[SendMessageToWXReq alloc]init];
+        req1.bText =  NO;
         if ([type isEqualToString:SceneTimeline]) {
-            req.scene = WXSceneTimeline;//分享微信朋友圈
+            req1.scene = WXSceneTimeline;//分享微信朋友圈
         }else{
-            req.scene = WXSceneSession;//分享微信好友
+            req1.scene = WXSceneSession;//分享微信好友
         }
-        [WXApi sendReq:req];
+        //创建分享内容对象
+        WXMediaMessage *urlMessage = [WXMediaMessage message];
+        urlMessage.title = param[@"tite"];//分享标题
+        urlMessage.description = param[@"content"];//分享描述
+        [urlMessage setThumbImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:param[@"img"]]]]];//分享图片,使用SDK的setThumbImage方法可压缩图片大小
+        //创建多媒体对象
+        WXWebpageObject *webObj = [WXWebpageObject object];
+        webObj.webpageUrl = param[@"link"];//分享链接
+        
+        //完成发送对象实例
+        urlMessage.mediaObject = webObj;
+        req1.message = urlMessage;
+        
+        //发送分享信息
+        [WXApi sendReq:req1];
     }
     
 }

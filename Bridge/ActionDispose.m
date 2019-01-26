@@ -30,7 +30,7 @@
             [Scan toScanQRCodeFromeVC:[self topViewController]];
             break;
         case shareAction:
-            [WechatClass WXShare:param[@"type"] shareImg:param[@"img"]];
+            [WechatClass WXShare:param[@"type"] shareImg:param];
             break;
         case payAction:
             [WechatClass startWechatPay:param];

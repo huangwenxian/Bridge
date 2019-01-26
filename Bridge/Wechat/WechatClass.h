@@ -15,6 +15,6 @@
 
 + (void)startWechatPay:(NSDictionary *)wechatParam;//微信支付
 
-+ (void)WXShare:(NSString *)type shareImg:(NSString *)imgUrl;
++ (void)WXShare:(NSString *)type shareImg:(NSDictionary *)param;
 
 @end
