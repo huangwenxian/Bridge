@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6B38D334212BBB7200BD1A81 /* AlipayClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B38D333212BBB7200BD1A81 /* AlipayClass.m */; };
+		6B4D115321FC602D00575796 /* QQClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D115221FC602D00575796 /* QQClass.m */; };
+		6B4D115621FC603F00575796 /* WeiBoClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D115521FC603F00575796 /* WeiBoClass.m */; };
 		6B545F6C2177115E001DF05F /* Gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B545F6B2177115E001DF05F /* Gigi.framework */; };
 		6B545F6D21771165001DF05F /* Gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B545F6B2177115E001DF05F /* Gigi.framework */; };
 		6B545F6E21771165001DF05F /* Gigi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B545F6B2177115E001DF05F /* Gigi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -113,6 +115,10 @@
 /* Begin PBXFileReference section */
 		6B38D332212BBB7200BD1A81 /* AlipayClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlipayClass.h; sourceTree = "<group>"; };
 		6B38D333212BBB7200BD1A81 /* AlipayClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlipayClass.m; sourceTree = "<group>"; };
+		6B4D115121FC602D00575796 /* QQClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQClass.h; sourceTree = "<group>"; };
+		6B4D115221FC602D00575796 /* QQClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQClass.m; sourceTree = "<group>"; };
+		6B4D115421FC603F00575796 /* WeiBoClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiBoClass.h; sourceTree = "<group>"; };
+		6B4D115521FC603F00575796 /* WeiBoClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiBoClass.m; sourceTree = "<group>"; };
 		6B545F6B2177115E001DF05F /* Gigi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gigi.framework; sourceTree = "<group>"; };
 		6BE0D73D21DEFDC30040E330 /* YBCustomCameraVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBCustomCameraVC.m; sourceTree = "<group>"; };
 		6BE0D73E21DEFDC40040E330 /* YBCustomCameraVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBCustomCameraVC.h; sourceTree = "<group>"; };
@@ -391,6 +397,24 @@
 				6B38D333212BBB7200BD1A81 /* AlipayClass.m */,
 			);
 			path = Alipay;
+			sourceTree = "<group>";
+		};
+		6B4D114F21FC601600575796 /* WeiBo */ = {
+			isa = PBXGroup;
+			children = (
+				6B4D115421FC603F00575796 /* WeiBoClass.h */,
+				6B4D115521FC603F00575796 /* WeiBoClass.m */,
+			);
+			path = WeiBo;
+			sourceTree = "<group>";
+		};
+		6B4D115021FC601600575796 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				6B4D115121FC602D00575796 /* QQClass.h */,
+				6B4D115221FC602D00575796 /* QQClass.m */,
+			);
+			path = QQ;
 			sourceTree = "<group>";
 		};
 		6BE0D74321DF06280040E330 /* BlImagePickerController */ = {
@@ -771,6 +795,8 @@
 				B6CCE1D1205CEC8C00AD1E8D /* Location */,
 				6B38D331212BBB4F00BD1A81 /* Alipay */,
 				B6CCE1CC205CC63700AD1E8D /* Wechat */,
+				6B4D115021FC601600575796 /* QQ */,
+				6B4D114F21FC601600575796 /* WeiBo */,
 				B6CCE1B4205CC41300AD1E8D /* OtherSDK */,
 				B6CCE1A7205CC3DF00AD1E8D /* Assets.xcassets */,
 				B6CCE1A9205CC3DF00AD1E8D /* LaunchScreen.storyboard */,
@@ -943,10 +969,12 @@
 				B6B5CFD52068F1D400F0DF1F /* XMLDictionary.m in Sources */,
 				6BE0D79221DF06280040E330 /* BLImagePickerViewController.m in Sources */,
 				B6B5ECC02199C24600342349 /* WSLCreateQRCodeController.m in Sources */,
+				6B4D115321FC602D00575796 /* QQClass.m in Sources */,
 				6BE0D78121DF06280040E330 /* BLPhotoGroupCell.m in Sources */,
 				6B38D334212BBB7200BD1A81 /* AlipayClass.m in Sources */,
 				6BE0D79321DF06280040E330 /* BLImageClipingViewController.m in Sources */,
 				6BE0D78621DF06280040E330 /* BLPushTransitionAnimator.m in Sources */,
+				6B4D115621FC603F00575796 /* WeiBoClass.m in Sources */,
 				6BE0D79121DF06280040E330 /* BLPhotoListFooterView.m in Sources */,
 				B6CCE1D5205CECD700AD1E8D /* LocationManager.m in Sources */,
 				B67468892068CCB2007F4A3A /* AFHTTPSessionManager.m in Sources */,
@@ -1134,7 +1162,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zuquan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaituozhe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1178,7 +1206,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zuquan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaituozhe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

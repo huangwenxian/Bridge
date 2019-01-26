@@ -36,11 +36,11 @@
 //    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
     self.window.rootViewController = [[ViewController alloc]init];
     //微信注册
-//    [WXApi registerApp:weChatAppId];
+    [WXApi registerApp:weChatAppId];
 //    //微博注册
-//    [WeiboSDK registerApp:weiboAppId];
+    [WeiboSDK registerApp:weiboAppId];
 //    //QQ注册
-//    [[TencentOAuth alloc] initWithAppId:qqAppId andDelegate:self];
+    [[TencentOAuth alloc] initWithAppId:qqAppId andDelegate:self];
     //极光
 //    [self JPushRegisterOptions:launchOptions];
     self.window.backgroundColor = [UIColor whiteColor];

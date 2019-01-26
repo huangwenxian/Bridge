@@ -251,7 +251,7 @@ extern id<BridgeDelegate>AlipayRequestDelegate;
         [ActionDispose actionDispose:sacnAction param:nil];
     }
     else if ([message.name isEqualToString:ShareProtocol]) {
-        [ActionDispose actionDispose:shareAction param:param];
+         [ActionDispose actionDispose:shareAction param:param];
     }
     else if ([message.name isEqualToString:WXProtocol]) {
         NSString *payString = [param objectForKey:@"payString"];

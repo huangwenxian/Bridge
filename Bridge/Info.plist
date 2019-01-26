@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>CN</string>
 	<key>CFBundleDisplayName</key>
-	<string>租圈</string>
+	<string>安行智品</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -21,6 +21,14 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleURLName</key>
+			<string>weixin</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wx851867992ab7f897</string>
+			</array>
+		</dict>
+		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>com.zuquan</string>
@@ -28,10 +36,34 @@
 		</dict>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>weixin</string>
+			<string>mqqapi</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wx0d4ab2b757694cbd</string>
+				<string>QQ420A4FE8</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>tencent</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>tencent1107972072</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.weibo</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>886283808</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>qzoneScheme</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>mqzone</string>
 			</array>
 		</dict>
 	</array>

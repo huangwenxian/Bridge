@@ -11,8 +11,10 @@
 
 //新版本需要用到的宏
 #define CLIENT_ID @"102243"    //商户唯一ID，必须配置对
-#define mainURL @"http://www.zhfxsc.cn/"//https://qt.qtlight.com/home/moto
-#define weChatAppId @"wx0d4ab2b757694cbd"
+#define mainURL @"http://app.3c1i1.cn/"//https://qt.qtlight.com/home/moto
+#define weChatAppId @"wx851867992ab7f897"
+#define weiboAppId @"886283808"
+#define qqAppId  @"1107972072"
 #define JPush  @"9bb492e2156cb03e732c189a"
 
 
