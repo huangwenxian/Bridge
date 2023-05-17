@@ -1,2 +1,1 @@
-# Bridge
-正品使用的新壳
+https://app.xtzcoin.com/#/pages/base/index
