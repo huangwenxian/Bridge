@@ -1,1 +1,1 @@
-https://app.xtzcoin.com/#/pages/base/index
+https://www.baidu.com
